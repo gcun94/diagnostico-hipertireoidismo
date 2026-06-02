@@ -1,0 +1,54 @@
+# Dados sensíveis e pesados
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.json
+*.parquet
+
+# Modelos serializados
+outputs/models/
+*.pkl
+*.joblib
+*.h5
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Ambientes virtuais
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
