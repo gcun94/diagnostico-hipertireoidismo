@@ -1,13 +1,16 @@
-# Dados sensíveis e pesados
-data/raw/
-data/processed/
+# Dados sensiveis e pesados
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
 *.csv
 *.xlsx
 *.json
 *.parquet
 
 # Modelos serializados
-outputs/models/
+outputs/models/*
+!outputs/models/.gitkeep
 *.pkl
 *.joblib
 *.h5
