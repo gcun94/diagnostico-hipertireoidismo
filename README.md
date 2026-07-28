@@ -4,7 +4,6 @@
 [![Pandas](https://img.shields.io/badge/Pandas-2.0+-green)](https://pandas.pydata.org/)
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3+-orange)](https://scikit-learn.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0+-red)](https://xgboost.readthedocs.io/)
-[![SHAP](https://img.shields.io/badge/SHAP-0.43+-purple)](https://shap.readthedocs.io/)
 
 ---
 
@@ -169,12 +168,13 @@ Modelo reconstruido do zero no notebook 04 e avaliado uma unica vez no conjunto 
 
 ---
 
-## Limitacoes
+## Limitacoes e Trabalho Futuro
 
 * Limiar de decisao (0.5) nao calibrado; ajuste permite mover o equilibrio entre falsos negativos e positivos sem retreinar
 * Unidades de medida dos exames nao confirmadas (TSH chega a 530); nao afeta o modelo mas limita interpretacao clinica absoluta
 * Alta separabilidade do problema: o desempenho reflete caracteristica do dataset, nao apenas qualidade do modelo
 * Dupla contagem de `sick` e `thyroid surgery` (individuais e em risk_factors), mantida por decisao consciente
+* Interpretabilidade via SHAP: aplicar SHAP values ao modelo final permitiria uma leitura mais aprofundada das metricas, mostrando a contribuicao individual de cada feature nas predicoes e validando clinicamente o raciocinio do modelo alem dos coeficientes ja analisados
 
 ---
 
@@ -208,8 +208,7 @@ notebooks/04_evaluation.ipynb
 * **Visualizacao:** Matplotlib, Seaborn, Plotly
 * **Pre-processamento:** Scikit-learn, Imbalanced-learn
 * **Machine Learning:** XGBoost, Scikit-learn
-* **Interpretabilidade:** SHAP
-* **Otimizacao:** Optuna
+* **Otimizacao:** RandomizedSearchCV
 * **Ambiente:** Jupyter Notebook
 
 ---
