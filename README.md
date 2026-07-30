@@ -139,7 +139,7 @@ Modelo reconstruido do zero no notebook 04 e avaliado uma unica vez no conjunto 
 
 ### Modelo Final
 
-**XGBoost tunado** (combinacao 58 de 60 avaliadas no Optuna)
+**XGBoost tunado** (combinacao 58 de 60 avaliadas no RandomizedSearchCV)
 
 | Hiperparametro | Valor |
 |---|---|
